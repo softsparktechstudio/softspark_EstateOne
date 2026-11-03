@@ -1,0 +1,12 @@
+{
+  "name": "softspark-estateone",
+  "private": true,
+  "scripts": {
+    "install:all": "npm install --prefix server && npm install --include=dev --prefix client",
+    "build": "npm run build --prefix client",
+    "start": "npm start --prefix server",
+    "db:setup": "npm run db:migrate --prefix server && npm run db:seed --prefix server",
+    "dev:server": "npm run dev --prefix server",
+    "dev:client": "npm run dev --prefix client"
+  }
+}
