@@ -33,7 +33,7 @@ export default function Shell() {
       <div className="main">
         <header className="topbar">
           <button className="burger" aria-label="Menu" onClick={() => setOpen(true)}>☰</button>
-          <div className="topbar-title">SoftSpark EstateOne <span>Business Suite</span></div>
+          <div className="topbar-title">SoftSpark <span>EstateOne</span></div>
           <div className="user-chip">
             <div className="avatar">{initials}</div>
             <div className="user-meta"><strong>{user.name}</strong><span>{cfg.label}</span>{user.organization_name && <span className="user-company" title={user.organization_name}>⌂ {user.organization_name}</span>}</div>
