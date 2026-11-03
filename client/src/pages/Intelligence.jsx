@@ -66,7 +66,7 @@ export default function Intelligence() {
   }
 
   return <>
-    <div className="page-head"><div><div className="eyebrow">SoftSpark INTELLIGENCE</div><h1>AI business assistant</h1><p className="muted">Turn everyday real-estate work into clear plans, messages and decisions.</p></div><span className={`pill ${status?.configured ? 'ok' : 'off'}`}>{status?.configured ? 'AI connected' : 'AI setup required'}</span></div>
+    <div className="page-head"><div><div className="eyebrow">CODEWEFT INTELLIGENCE</div><h1>AI business assistant</h1><p className="muted">Turn everyday real-estate work into clear plans, messages and decisions.</p></div><span className={`pill ${status?.configured ? 'ok' : 'off'}`}>{status?.configured ? 'AI connected' : 'AI setup required'}</span></div>
     {error && <div className="alert">{error}</div>}
     <div className="intelligence-layout">
       <section className="card ai-chat-card">

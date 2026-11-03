@@ -25,7 +25,7 @@ export default function SaaS(){
   }
   async function changePlan(planCode,billingCycle){setBusy(true);setError('');setMessage('');try{const r=await api('/saas/subscription/change',{method:'POST',body:{planCode,billingCycle}});setMessage(r.message);if(r.razorpay){setMessage(`${r.message} Opening secure checkout…`); await openCheckout(r.razorpay); }load()}catch(e){setError(e.message)}finally{setBusy(false)}}
   return <>
-    <div className="page-head"><div><div className="eyebrow">SoftSpark SAAS</div><h1>{isRoot?'Organizations & platform plans':'Company & subscription'}</h1><p className="muted">Manage company onboarding, plan limits and recurring billing.</p></div><span className="pill ok">SaaS foundation</span></div>
+    <div className="page-head"><div><div className="eyebrow">CODEWEFT SAAS</div><h1>{isRoot?'Organizations & platform plans':'Company & subscription'}</h1><p className="muted">Manage company onboarding, plan limits and recurring billing.</p></div><span className="pill ok">SaaS foundation</span></div>
     {error&&<div className="alert">{error}</div>}{message&&<div className="alert success">{message}</div>}
     {isRoot&&<>
       <div className="card"><h3>Register a new company</h3><p className="muted small">Creates an organization, its first Admin login, a 14-day Starter trial and a public marketplace slug.</p>
